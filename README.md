@@ -23,7 +23,7 @@ FMIN310 - Ingénierie dirigée par les modèles
       - Création d'un fichier ECore Diagramme en reprodusant le méta modél des automates
         - Create New / File / Other / ECore Model
         - Clic droit My.ecore -> Init. ECore Diagramm pour générer un My.aidr (représentation graphique)
-      - Instanstation d'un exemple d'automate dans un fichier xmi
+      - Instantiation d'un exemple d'automate dans un fichier xmi
         - Appeler le node vide (violet) "package" et mettre Uri à null
         - Clic droit sur Machine / Create dynamic Instance
         - Faire des clics droits sur les objets pour en créer d'autres
