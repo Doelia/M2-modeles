@@ -14,6 +14,6 @@ FMIN310 - Ingénierie dirigée par les modèles
 - TD sur les méta modèles sur 3h (automates)
   - Méta modéle d'un automate depuis un texte
   - Instance du méta modèle (= représentation abstraite) depuis un automate (= représentation concrète)
-  - Méta méta modèle (façon .. à partir d'un extrait du méta modèle réalisé en 1.
+  - Méta méta modèle (façon eCore à partir d'un extrait du méta modèle réalisé en 1.
 - TP sur EMF sur la State Machine
   - Support de cours http://www.lirmm.fr/~ferdjoukh/docs/publis/IDM/coursEMF.pdf
