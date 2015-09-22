@@ -3,8 +3,32 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="null My.ecore">
-  <etat name=""/>
-  <etat/>
+  <etat name="Initial"
+      in="//@transition.0"/>
+  <etat name="A"
+      in="//@transition.1"
+      out="//@transition.0 //@transition.2"/>
+  <etat name="B"
+      in="//@transition.2 //@transition.3"
+      out="//@transition.1"/>
+  <etat name="Final"
+      out="//@transition.3"/>
   <transition
+      name="IA"
+      source="//@etat.0"
+      cible="//@etat.1"/>
+  <transition
+      name="AB"
+      source="//@etat.1"
+      cible="//@etat.2"/>
+  <transition
+      name="BA"
+      source="//@etat.2"
+      cible="//@etat.1"/>
+  <transition
+      name="BF"
+      source="//@etat.2"
+      cible="//@etat.3"/>
+  <operation
       name=""/>
 </Machine>
