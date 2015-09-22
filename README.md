@@ -8,7 +8,6 @@ FMIN310 - Ingénierie dirigée par les modèles
 
 - Cours d'introduction sur les méta modèles : http://www.lirmm.fr/content/download/9987/141059/file/cours1-M%C3%A9tamod%C3%A8les.pdf
 - Pas de TD/TP
-- 
 
 ### Séance 22/09
 
