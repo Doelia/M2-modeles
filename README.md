@@ -28,3 +28,18 @@ FMIN310 - Ingénierie dirigée par les modèles
         - Clic droit sur Machine / Create dynamic Instance
         - Faire des clics droits sur les objets pour en créer d'autres
     - La suite au prochain TP ?
+
+### Séance 29/09
+
+Changement d'intervenant : Huchard
+
+- Mini cours résumé sur les méta models
+  - Présentation du document descriptif du MM UML
+- TD "Introduction au méta-modèle UML"
+  - Création de modèles, transformation en méta modeles, instansation...
+    - Exemple utilisé : Elements, packages, namespaces
+  - Apprentissage des notations des MM
+    - Subsets
+    - Union
+    - Redefine
+- TD sur la multiplicité
