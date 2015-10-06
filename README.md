@@ -18,7 +18,7 @@ FMIN310 - Ingénierie dirigée par les modèles
 - TP sur EMF sur la State Machine, avec un intervenant
   - Support de cours http://www.lirmm.fr/~ferdjoukh/docs/publis/IDM/coursEMF.pdf
   - TP : http://www.lirmm.fr/~ferdjoukh/docs/publis/IDM/tp1.pdf
-    - Etapes principales :
+    - Question 1.2
       - Installation de Eclipse Mars edition Modeling Tools + Extention Papyrus
       - Créer un nouveau projet "Modeling project"
       - Note : Vérifier la Perspective
@@ -29,7 +29,6 @@ FMIN310 - Ingénierie dirigée par les modèles
         - Appeler le node vide (violet) "package" et mettre Uri à null
         - Clic droit sur Machine / Create dynamic Instance
         - Faire des clics droits sur les objets pour en créer d'autres
-    - La suite au prochain TP ?
 
 ### Séance 29/09
 
@@ -45,3 +44,13 @@ Changement d'intervenant : Huchard
     - Union
     - Redefine
 - TD sur la multiplicité
+
+
+### Séance 6/10
+
+- TD de 1h30 avec Mme Nebut (type partiel)
+  - Instantiation en synthaxe abstraite d'un automate à partir du méta modèle UML des machines à état
+  - 
+- Suite TP1 :
+  - Question 1.3
+    - 
