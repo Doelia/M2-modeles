@@ -18,14 +18,14 @@ FMIN310 - Ingénierie dirigée par les modèles
 - TP sur EMF sur la State Machine, avec un intervenant
   - Support de cours http://www.lirmm.fr/~ferdjoukh/docs/publis/IDM/coursEMF.pdf
   - TP : http://www.lirmm.fr/~ferdjoukh/docs/publis/IDM/tp1.pdf
-    - Question 1.2
+    - Etapes principales
       - Installation de Eclipse Mars edition Modeling Tools + Extention Papyrus
       - Créer un nouveau projet "Modeling project"
       - Note : Vérifier la Perspective
       - Création d'un fichier ECore Diagramme en reprodusant le méta modél des automates
         - Create New / File / Other / ECore Model
         - Clic droit My.ecore -> Init. ECore Diagramm pour générer un My.aidr (représentation graphique)
-      - Instantiation d'un exemple d'automate dans un fichier xmi
+      - Instantiation d'un exemple d'automate dans un fichier xmi (question 1.3)
         - Appeler le node vide (violet) "package" et mettre Uri à null
         - Clic droit sur Machine / Create dynamic Instance
         - Faire des clics droits sur les objets pour en créer d'autres
@@ -50,6 +50,4 @@ Changement d'intervenant : Huchard
 
 - TD de 1h30 avec Mme Nebut (type partiel)
   - Instantiation en synthaxe abstraite d'un automate à partir du méta modèle UML des machines à état
-- Suite TP1 :
-  - Question 1.3
-    - 
+- Suite et fin TP2
