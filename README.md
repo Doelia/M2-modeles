@@ -50,7 +50,6 @@ Changement d'intervenant : Huchard
 
 - TD de 1h30 avec Mme Nebut (type partiel)
   - Instantiation en synthaxe abstraite d'un automate à partir du méta modèle UML des machines à état
-  - 
 - Suite TP1 :
   - Question 1.3
     - 
