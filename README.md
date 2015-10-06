@@ -20,6 +20,8 @@ FMIN310 - Ingénierie dirigée par les modèles
   - TP : http://www.lirmm.fr/~ferdjoukh/docs/publis/IDM/tp1.pdf
     - Etapes principales :
       - Installation de Eclipse Mars edition Modeling Tools + Extention Papyrus
+      - Créer un nouveau projet "Modeling project"
+      - Note : Vérifier la Perspective
       - Création d'un fichier ECore Diagramme en reprodusant le méta modél des automates
         - Create New / File / Other / ECore Model
         - Clic droit My.ecore -> Init. ECore Diagramm pour générer un My.aidr (représentation graphique)
