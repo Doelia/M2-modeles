@@ -32,7 +32,7 @@ FMIN310 - Ingénierie dirigée par les modèles
 
 ### Séance 29/09
 
-Changement d'intervenant : Huchard
+Changement d'intervenant : Mme Huchard
 
 - Mini cours résumé sur les méta models
   - Présentation du document descriptif du MM UML
