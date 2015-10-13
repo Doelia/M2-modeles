@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.xmi.impl.XMLMapImpl;
 import maps.Boulevard;
 import maps.MapsPackage;
 import maps.Pedestrian;
+import maps.PublicSpace;
 import maps.Road;
 import maps.Square;
 import maps.map;
@@ -36,8 +37,16 @@ public class test {
 		
 		displayStreets(maMap);
 		getGrandesRuesPietonne(maMap);
-		//getRouteAdjacentes(maMap.get);
-				
+		try {
+			getRouteAdjacentes(getUnBoulevard(maMap));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			getRoutesBordant(getUnSquare(maMap));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -60,17 +69,35 @@ public class test {
 	}
 	
 	public static void getRouteAdjacentes(Boulevard b) {
-		System.out.println("List des routes adjacentes");
+		System.out.println("List des routes adjacentes au boulevard "+b.getName());
 		for (Road r : b.getMeet()) {
-			System.out.println(r);
+			System.out.println(r.getName());
 		}
 	}
 	
 	public static void getRoutesBordant(Square q) {
 		System.out.println("Liste des routes bordants la place "+q.getName());
 		for (Road r : q.getBorderedBy()) {
-			System.out.println(r);
+			System.out.println(r.getName());
 		}
+	}
+	
+	public static Boulevard getUnBoulevard(map map) throws Exception {
+		for (Road r : map.getRoads()) {
+			if (r instanceof Boulevard) {
+				return (Boulevard) r;
+			}
+		}
+		throw new Exception("Boulevard introuvable");
+	}
+	
+	public static Square getUnSquare(map map) throws Exception {
+		for (PublicSpace r : map.getSpaces()) {
+			if (r instanceof Square) {
+				return (Square) r;
+			}
+		}
+		throw new Exception("Square introuvable");
 	}
 	
 	
