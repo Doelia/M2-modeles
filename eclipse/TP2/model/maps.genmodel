@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/TP2/src" modelPluginID="TP2" modelName="Maps"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>maps.ecore</foreignModel>
+  <genPackages prefix="Maps" disposableProviderFactory="true" ecorePackage="maps.ecore#/">
+    <genClasses ecoreClass="maps.ecore#//map">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maps.ecore#//map/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maps.ecore#//map/roads"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maps.ecore#//map/spaces"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="maps.ecore#//Road">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference maps.ecore#//Road/border"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maps.ecore#//Road/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maps.ecore#//Road/length"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference maps.ecore#//Road/meet"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="maps.ecore#//PublicSpace">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference maps.ecore#//PublicSpace/borderedBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maps.ecore#//PublicSpace/name"/>
+    </genClasses>
+    <genClasses ecoreClass="maps.ecore#//Street"/>
+    <genClasses ecoreClass="maps.ecore#//Boulevard"/>
+    <genClasses ecoreClass="maps.ecore#//Pedestrian"/>
+    <genClasses ecoreClass="maps.ecore#//Garden"/>
+    <genClasses ecoreClass="maps.ecore#//Square"/>
+  </genPackages>
+</genmodel:GenModel>

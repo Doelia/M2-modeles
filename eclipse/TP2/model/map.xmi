@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<maps:map xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:maps="http://maps/1.0"
+    xsi:schemaLocation="http://maps/1.0 maps.ecore"
+    name="QuartierComedie">
+  <roads xsi:type="maps:Street"
+      border="//@spaces.0"
+      name="Vedun"
+      length="1500"
+      meet="//@roads.0"/>
+  <roads xsi:type="maps:Boulevard"
+      border="//@spaces.0"
+      name="Victor Hugo"
+      length="500"
+      meet="//@roads.0 //@roads.2"/>
+  <roads xsi:type="maps:Pedestrian"
+      border="//@spaces.0"
+      name="Maguelone"
+      length="1100"
+      meet="//@roads.1"/>
+  <roads xsi:type="maps:Street"
+      name="Etuves"
+      length="200"/>
+  <roads xsi:type="maps:Street"
+      name="Massane"
+      length="300"/>
+  <roads xsi:type="maps:Pedestrian"
+      border="//@spaces.0"
+      name="Loge"
+      length="1300"
+      meet="//@roads.3"/>
+  <spaces xsi:type="maps:Square"
+      borderedBy="//@roads.0 //@roads.1 //@roads.2 //@roads.5"
+      name="Comedie"/>
+</maps:map>
