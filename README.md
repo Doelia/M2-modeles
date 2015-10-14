@@ -55,6 +55,7 @@ Changement d'intervenant : Mme Huchard
 
 ### Séance 13/10
 
-- [TP2 Manipulation de modèles en EMF/Java](http://www.lirmm.fr/~ferdjoukh/docs/publis/IDM/tp2.pdf)
-  - 
+- [TP2 Manipulation de modèles en EMF/Java](http://www.lirmm.fr/~ferdjoukh/docs/publis/IDM/tp2.pdf) directement, sans cours
+  - Génération de code Java à partir d'un modéle et utilisation
+  - TP terminé en 1 heure
 
