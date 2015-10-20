@@ -45,17 +45,39 @@ Changement d'intervenant : Mme Huchard
     - Redefine
 - TD sur la multiplicité
 
-
 ### Séance 6/10
 
 - TD de 1h30 avec Mme Nebut (type partiel)
   - Instantiation en synthaxe abstraite d'un automate à partir du méta modèle UML des machines à état
 - Suite et fin TP2
 
-
 ### Séance 13/10
 
 - [TP2 Manipulation de modèles en EMF/Java](http://www.lirmm.fr/~ferdjoukh/docs/publis/IDM/tp2.pdf) directement, sans cours
   - Génération de code Java à partir d'un modéle et utilisation
   - TP terminé en 1 heure
+
+### Séance 20/10
+
+Mme. Huchard
+
+- Cours de 1H30 sur OCL
+  - Poly de 22 pages surligné avec les couleurs
+- TP sur OCL : https://www.lirmm.fr/users/utilisateurs-lirmm/marianne-huchard/enseignement/idm-2015-2016/oclinecore
+  - Fait sur mon PC
+  - Tutoriel suivit à coup de clics
+  - Plugin OCL pour créer des fichiers ".genmodel" et générer du Java
+  - Manipulations :
+    - new EMF Empty Project
+    - new OCLinEcore file -> file.ecore
+    - Modificatition avec d'éditeur EMF pour écrire du code et les contraintes
+    - Clic droit sur Entry / Create Dynamic instance -> file.xmi
+      - Quand on crée des instances, il test si les contraintes sont OK, fait des erreurs sinon
+    - New / Other / EMF Generator Model -> fichier .genmodel
+    - Clic droit sur .genmodel / Generate Model code pour générer le code java
+      - Le code est très compliqué quand même...
+  
+
+
+
 
