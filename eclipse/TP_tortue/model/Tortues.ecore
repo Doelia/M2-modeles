@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="example" nsURI="http://www.example.org/examples/example.ecore"
+    nsPrefix="ex">
+  <eClassifiers xsi:type="ecore:EEnum" name="Sexe" serializable="false">
+    <eLiterals name="MALE" value="1"/>
+    <eLiterals name="FEMELLE"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EcoleTortues">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entries" ordered="false"
+        upperBound="-1" eType="#//Ecole" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Aliment"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TypeAliment"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ModeElevage">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tempJour" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tempNuit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="terrarium" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pleinAir" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EspeceTortue">
+    <eOperations name="nourriturePossible" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="t" eType="#//TypeAliment"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nomLatin" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tailleMaxAdulte" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ecole">
+    <eOperations name="mange">
+      <eParameters name="a" eType="#//Aliment"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="age" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="taille" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sexe" eType="#//Sexe"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateNote" ordered="false"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="captive" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+</ecore:EPackage>
