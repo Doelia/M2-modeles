@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ex:AddressBook
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ex="monCarnet"
+    xsi:schemaLocation="monCarnet addressBook.ecore">
+  <entries personName="Stéphane"
+      personAddress="614"
+      anneeNaissance="1992"
+      age="23"/>
+</ex:AddressBook>
