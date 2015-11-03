@@ -78,6 +78,12 @@ Mme. Huchard
       - Le code est très compliqué quand même...
   
 
+### Séance du 03/11
 
+Mme. Huchard
 
+- Cours de 1H30 sur la suite de OCL (toujours le même poly)
+- Suite TP OCL
+  - Correction du modèle distribuée
+  - Codage des contraintes des tortues
 
