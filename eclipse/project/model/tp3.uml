@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_YvKiwF3lEeSQ2MxWsiqfQA" name="ModeleTp3">
+  <packagedElement xmi:type="uml:Package" xmi:id="_ar7xcF3lEeSQ2MxWsiqfQA" name="pack1">
+    <packagedElement xmi:type="uml:Class" xmi:id="_b-zHgF3lEeSQ2MxWsiqfQA" name="B"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dB144F3lEeSQ2MxWsiqfQA" name="A">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Rbmm0F3rEeSQ2MxWsiqfQA" name="t" type="_cgZxAF3rEeSQ2MxWsiqfQA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bMb2cF3lEeSQ2MxWsiqfQA" name="pack2">
+    <packagedElement xmi:type="uml:Class" xmi:id="_cbgRoF3lEeSQ2MxWsiqfQA" name="C"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aIcGwF59EeSzc-3F4i1PYA" name="D">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nGU5gF59EeSzc-3F4i1PYA" general="_cbgRoF3lEeSQ2MxWsiqfQA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fFFm8F59EeSzc-3F4i1PYA" name="foo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_krrxIF5_EeSzc-3F4i1PYA" name="E">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ksAH8F6EEeSzc-3F4i1PYA" name="x" type="_cgZxAF3rEeSQ2MxWsiqfQA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_cgZxAF3rEeSQ2MxWsiqfQA" name="Int"/>
+</uml:Model>

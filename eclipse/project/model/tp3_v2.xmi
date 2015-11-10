@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" name="ModeleTp3">
+  <packagedElement xsi:type="uml:Package" name="pack1">
+    <packagedElement xsi:type="uml:Class" name="B"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Package" name="pack2">
+    <packagedElement xsi:type="uml:Class" name="C">
+      <ownedOperation name="foo"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="D">
+      <generalization general="//@packagedElement.1/@packagedElement.0"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="E">
+      <ownedAttribute name="x" visibility="private" type="//@packagedElement.2"/>
+      <ownedOperation name="getx"/>
+      <ownedOperation name="setx">
+        <ownedParameter name="var" type="//@packagedElement.2"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="A">
+      <ownedAttribute name="t" type="//@packagedElement.2"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="uml:DataType" name="Int"/>
+</uml:Model>
