@@ -83,7 +83,44 @@ public class Refactor {
 		parent.getOwnedOperation().add(op);
 	}
 	
-	public Operation getOperation(Class c, String name) {
+	/**
+	 * méthode de réusinage qui remplace un attribut de type simple par un attribut ´
+	objet. Si une classe A posséde un attribut x de type T, on créera une nouvelle classe X qui
+	possédera un attribut x de type T, et la classe A possédera désormais un attribut x de type
+	X.
+	 */
+	public void attributObjet(String attrNom, String classeNom, String packNom) {
+		
+		Package p = getPackage(packNom);
+		Class classe = getClassInPackage(p, classeNom);
+		
+		Property attr = null;
+		for (Property pr : classe.getOwnedAttribute()) {
+			if (pr.getName().equals(attrNom)) {
+				attr = pr;
+			}
+		}
+		
+		// Création de la nouvelle classe
+		Class o = UmlFactoryImpl.eINSTANCE.createClass();
+		o.setName(attr.getName().toUpperCase());
+		
+		Property newPR = UmlFactoryImpl.eINSTANCE.createProperty();
+		newPR.setName(attr.getName());
+		newPR.setType(attr.getType());
+		o.getOwnedAttribute().add(newPR);
+		
+		p.getPackagedElement().add(o);
+		
+		Property newPRClass = UmlFactoryImpl.eINSTANCE.createProperty();
+		newPRClass.setName(attr.getName());
+		newPRClass.setType(o);
+		classe.getOwnedAttribute().add(newPRClass);
+		classe.getOwnedAttribute().remove(attr);
+		
+	}
+	
+	private Operation getOperation(Class c, String name) {
 		for (Operation e : c.getOwnedOperation()) {
 			if (e.getName().equals(name)) {
 				return e;
@@ -92,7 +129,7 @@ public class Refactor {
 		return null;
 	}
 	
-	public Class getClassInPackage(Package p, String name) {
+	private Class getClassInPackage(Package p, String name) {
 		for (PackageableElement e : p.getPackagedElement()) {
 			if (e instanceof Class && e.getName().equals(name)) {
 				return (Class) e;
@@ -101,7 +138,7 @@ public class Refactor {
 		return null;
 	}
 	
-	public Package getPackage(String name) {
+	private Package getPackage(String name) {
 		for (PackageableElement e : this.m.getPackagedElement()) {
 			if (e instanceof Package && e.getName().equals(name)) {
 				return (Package) e;

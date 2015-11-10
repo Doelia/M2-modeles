@@ -26,8 +26,8 @@ public class testSave {
 		Refactor r = new Refactor(umlP);
 		r.deplacerClasse("A", "pack1", "pack2");
 		r.remplacerAttrAccess("x", "E", "pack2");
-		
 		r.remonterOperation("foo", "D", "C", "pack2");
+		r.attributObjet("t", "A", "pack2");
 
 		//Sauvergarder le modèle avec son nouveau nom
 		sauverModele("model/tp3_v2.xmi", umlP);

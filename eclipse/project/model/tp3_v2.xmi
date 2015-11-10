@@ -18,6 +18,9 @@
       </ownedOperation>
     </packagedElement>
     <packagedElement xsi:type="uml:Class" name="A">
+      <ownedAttribute name="t" type="//@packagedElement.1/@packagedElement.4"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="T">
       <ownedAttribute name="t" type="//@packagedElement.2"/>
     </packagedElement>
   </packagedElement>
