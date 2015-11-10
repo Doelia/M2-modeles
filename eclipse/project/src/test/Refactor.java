@@ -1,7 +1,5 @@
 package test;
 
-import java.util.ArrayList;
-
 import uml.Class;
 import uml.DataType;
 import uml.Model;
@@ -10,7 +8,6 @@ import uml.Package;
 import uml.PackageableElement;
 import uml.Parameter;
 import uml.Property;
-import uml.Type;
 import uml.VisibilityKind;
 import uml.impl.UmlFactoryImpl;
 
