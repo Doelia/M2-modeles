@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" name="RootElement">
+  <packagedElement xsi:type="uml:CallEvent" operation="//@packagedElement.1/@packagedElement.0/@ownedOperation.0"/>
+  <packagedElement xsi:type="uml:Package">
+    <packagedElement xsi:type="uml:Class" name="Class2">
+      <ownedBehavior xsi:type="uml:StateMachine" name="StateMachine1">
+        <region name="Region1">
+          <subvertex xsi:type="uml:State" name="State1"/>
+          <subvertex xsi:type="uml:Pseudostate" name="Initial1"/>
+          <subvertex xsi:type="uml:FinalState" name="FinalState1"/>
+          <transition target="//@packagedElement.1/@packagedElement.0/@ownedBehavior.0/@region.0/@subvertex.0" source="//@packagedElement.1/@packagedElement.0/@ownedBehavior.0/@region.0/@subvertex.1"/>
+          <transition source="//@packagedElement.1/@packagedElement.0/@ownedBehavior.0/@region.0/@subvertex.0"/>
+          <transition target="//@packagedElement.1/@packagedElement.0/@ownedBehavior.0/@region.0/@subvertex.2" source="//@packagedElement.1/@packagedElement.0/@ownedBehavior.0/@region.0/@subvertex.0">
+            <trigger name="" event="//@packagedElement.0"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedOperation name="Operation1"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="Abstract State" isAbstract="true"/>
+    <packagedElement xsi:type="uml:Class" name="State State1">
+      <generalization general="//@packagedElement.1/@packagedElement.1"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="State FinalState1">
+      <generalization general="//@packagedElement.1/@packagedElement.1"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Association" name="currentState" memberEnd="//@packagedElement.1/@packagedElement.4/@ownedEnd.0 //@packagedElement.1/@packagedElement.4/@ownedEnd.1">
+      <ownedEnd name="classeConcernee" type="//@packagedElement.1/@packagedElement.1" association="//@packagedElement.1/@packagedElement.4"/>
+      <ownedEnd name="etatCourant" type="//@packagedElement.1/@packagedElement.3" association="//@packagedElement.1/@packagedElement.4"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

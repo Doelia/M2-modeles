@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" name="root">
+  <packagedElement xsi:type="uml:Class" name="c1">
+    <ownedOperation name="op1"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="Etatc1" isAbstract="true">
+    <ownedOperation name="op1" isAbstract="true"/>
+    <ownedOperation name="op1" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association">
+    <ownedEnd name="etatCourant" type="//@packagedElement.1"/>
+    <ownedEnd name="concernedClass" type="//@packagedElement.0"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="s1">
+    <generalization general="//@packagedElement.1"/>
+    <ownedOperation name="op1"/>
+    <ownedOperation name="op1"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="f1">
+    <generalization general="//@packagedElement.1"/>
+    <ownedOperation name="op1"/>
+    <ownedOperation name="op1"/>
+  </packagedElement>
+</uml:Model>

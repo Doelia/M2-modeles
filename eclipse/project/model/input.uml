@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_IF-aUEiZEeSG4afuyxRScQ">
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_FBhqgEicEeSG4afuyxRScQ" name="ev1" operation="_ix0K0EiZEeSG4afuyxRScQ"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_V3H1QFuNEeSdXsihVRxcSA" name="p1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PKp-AEiZEeSG4afuyxRScQ" name="c1" visibility="package" classifierBehavior="_NrqQcEiZEeSG4afuyxRScQ">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_NrqQcEiZEeSG4afuyxRScQ" name="SM1" redefinedClassifier="_PKp-AEiZEeSG4afuyxRScQ">
+      <region xmi:id="_NrsssEiZEeSG4afuyxRScQ" name="Region1">
+        <transition xmi:id="_sSyKwEiZEeSG4afuyxRScQ" name="Transition0" source="_nGed8EiZEeSG4afuyxRScQ" target="_o0Bk4EiZEeSG4afuyxRScQ">
+          <trigger xmi:id="_gr81EEiaEeSG4afuyxRScQ" name="t1" event="_FBhqgEicEeSG4afuyxRScQ"/>
+        </transition>
+        <transition xmi:id="_ta-h4EiZEeSG4afuyxRScQ" name="Transition1" source="_o0Bk4EiZEeSG4afuyxRScQ" target="_rIvZgEiZEeSG4afuyxRScQ">
+          <trigger xmi:id="_j3inUEiaEeSG4afuyxRScQ" name="tr2" event="_FBhqgEicEeSG4afuyxRScQ"/>
+        </transition>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_nGed8EiZEeSG4afuyxRScQ" name="i1"/>
+        <subvertex xmi:type="uml:State" xmi:id="_o0Bk4EiZEeSG4afuyxRScQ" name="s1"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_rIvZgEiZEeSG4afuyxRScQ" name="f1"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_ix0K0EiZEeSG4afuyxRScQ" name="op1"/>
+  </packagedElement>
+</uml:Model>

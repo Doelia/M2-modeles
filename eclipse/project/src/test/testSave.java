@@ -10,19 +10,39 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLMapImpl;
 
 import uml.Model;
+import uml.StateMachine;
 import uml.UmlPackage;
+import uml.Class;
 
 public class testSave {
-	
+
 	public static void main(String[] args) {
-		
+		test_tp4();
+	}
+	
+	public static void test_tp4() {
+		//Je charge l'instance map.xmi du méta-modèle maps.ecore
+		Resource resource = chargerModele("model/stateMachine.uml", UmlPackage.eINSTANCE);
+		if (resource == null) System.err.println("Erreur de chargement du modèle");
+
+		//Instruction récupérant le modèle sous forme d'arbre à partir de la classe racine "Model"
+		Model umlP = (Model) resource.getContents().get(0);
+
+		RefactorStateMachine r = new RefactorStateMachine(umlP);
+		r.refactorInStateFactory();
+
+		//Sauvergarder le modèle avec son nouveau nom
+		sauverModele("model/stateMachine_v2.uml", umlP);
+	}
+
+	public static void test_tp3() {
 		//Je charge l'instance map.xmi du méta-modèle maps.ecore
 		Resource resource = chargerModele("model/tp3.uml", UmlPackage.eINSTANCE);
 		if (resource == null) System.err.println("Erreur de chargement du modèle");
 
 		//Instruction récupérant le modèle sous forme d'arbre à partir de la classe racine "Model"
 		Model umlP = (Model) resource.getContents().get(0);
-		
+
 		Refactor r = new Refactor(umlP);
 		r.deplacerClasse("A", "pack1", "pack2");
 		r.remplacerAttrAccess("x", "E", "pack2");
@@ -31,7 +51,6 @@ public class testSave {
 
 		//Sauvergarder le modèle avec son nouveau nom
 		sauverModele("model/tp3_v2.xmi", umlP);
-
 	}
 
 
@@ -68,6 +87,6 @@ public class testSave {
 		return resource;
 	}
 
-	
+
 
 }

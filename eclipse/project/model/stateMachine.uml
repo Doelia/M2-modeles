@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9WVj8Gw0EeWi2o2KWry9hg" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_nRTNMGw5EeWi2o2KWry9hg" name="Class2">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_l-5KIGw5EeWi2o2KWry9hg" name="StateMachine1">
+      <region xmi:id="_l_Ae4Gw5EeWi2o2KWry9hg" name="Region1">
+        <transition xmi:id="__T8G0Gw5EeWi2o2KWry9hg" source="_7PPiUGw5EeWi2o2KWry9hg" target="_6ypF4Gw5EeWi2o2KWry9hg"/>
+        <transition xmi:id="__v3N0Gw5EeWi2o2KWry9hg" source="_6ypF4Gw5EeWi2o2KWry9hg"/>
+        <transition xmi:id="_BpYUMGw6EeWi2o2KWry9hg" source="_6ypF4Gw5EeWi2o2KWry9hg" target="_A2OY8Gw6EeWi2o2KWry9hg">
+          <trigger xmi:id="_2WZuoGw6EeWi2o2KWry9hg" name="" event="_pfdRYGw6EeWi2o2KWry9hg"/>
+        </transition>
+        <subvertex xmi:type="uml:State" xmi:id="_6ypF4Gw5EeWi2o2KWry9hg" name="State1"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_7PPiUGw5EeWi2o2KWry9hg" name="Initial1"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_A2OY8Gw6EeWi2o2KWry9hg" name="FinalState1"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_oNqu0Gw5EeWi2o2KWry9hg" name="Operation1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_pfdRYGw6EeWi2o2KWry9hg" operation="_oNqu0Gw5EeWi2o2KWry9hg"/>
+</uml:Model>
