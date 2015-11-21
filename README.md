@@ -83,17 +83,17 @@ Mme. Huchard
 Mme. Huchard
 
 - Cours de 1H30 sur la suite de OCL (toujours le même poly)
-- Suite TP OCL
+- Suite TP OCL 
   - Correction du modèle distribuée
   - Codage des contraintes des tortues
 
 ### Séance du 10/11
-- TP3 sur la manipulation d'un modèle UML (http://www.lirmm.fr/~ferdjoukh/french/idm.html)
+- TP3  avec M. Ferdjoukh sur la manipulation d'un modèle UML (http://www.lirmm.fr/~ferdjoukh/french/idm.html)
   - Export du code pour refactor à partir du métamodèle UML (fichier .ecore)
   - Manipulation d'un modèle UML : Déplacement de classes, ajout d'atributs...
 
 ### Séance du 17/11
-- Direct TP4 (http://www.lirmm.fr/~ferdjoukh/french/idm.html)
+- Direct TP4 avec M. Ferdjoukh (http://www.lirmm.fr/~ferdjoukh/french/idm.html)
   - Sur l'écriture d'un code qui transforme le modèle d'une state machine en modèle avec le patron State
   - Patron State : Instance générale avec un attribut de type "State" qui pointe vers le bon State
   - Réalisé à partir du refactor UML générée au TP3
