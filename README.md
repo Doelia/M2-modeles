@@ -99,3 +99,5 @@ Mme. Huchard
   - Réalisé à partir du refactor UML générée au TP3
   - TP terminé, fait dans le projet "TP3"
 
+### Séance du 01/12
+- Cours annulé
